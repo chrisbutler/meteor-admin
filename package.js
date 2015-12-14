@@ -1,6 +1,6 @@
 Package.describe({
   name: 'mfactory:admin',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'A complete admin dashboard solution',
   git: 'https://github.com/meteor-factory/meteor-admin.git',
   documentation: 'README.md'
@@ -15,6 +15,7 @@ Package.onUse(function(api) {
     'tracker',
     'reactive-var',
     'reactive-dict',
+    'accounts-base',
     'mfactory:admin-lte@0.0.1',
     'aldeed:autoform@5.3.0',
     'aldeed:tabular@1.2.0',
@@ -22,11 +23,17 @@ Package.onUse(function(api) {
   ]);
 
   api.use([
-    'iron:router@1.0.7',
+    'iron:router@1.0.12',
+    'zimme:active-route@2.3.2',
+    'fortawesome:fontawesome@4.5.0'
+  ]);
+
+  api.use([
     'accounts-ui',
     'useraccounts:core@1.11.1',
     'useraccounts:bootstrap@1.11.1'
   ], { weak: true });
+
 
   api.addFiles([
     'lib/admin.js',
