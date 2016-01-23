@@ -31,6 +31,7 @@ Package.onUse(function(api) {
   api.use([
     'accounts-ui',
     'useraccounts:core@1.11.1',
+    'alanning:roles@1.2.14',
     'useraccounts:bootstrap@1.11.1'
   ], { weak: true });
 

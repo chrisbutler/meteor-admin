@@ -21,7 +21,7 @@
 </template>
 
 <template name="mfAdminSidebarItem">
-  <li>
+  <li class="{{isActivePath href}}">
     {{#if template}}
       {{> Template.dynamic template=template data=this}}
     {{else}}
@@ -36,7 +36,7 @@
 </template>
 
 <template name="mfAdminSidebarTreeview">
-  <li class="treeview">
+  <li class="treeview {{isActivePath href}}">
     <a href="{{href}}">
       {{#if template}}
         {{> Template.dynamic template=template data=this}}

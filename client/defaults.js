@@ -1,9 +1,5 @@
-Admin.navbar.set('Home', {
-  url: '/'
-});
-
-Admin.sidebar.set('Dashboard', {
+Admin.sidebar.set('Collections', {
   path: '/',
-  icon: 'tachometer',
+  icon: 'database',
   order: 100
 });

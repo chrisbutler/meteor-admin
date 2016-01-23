@@ -16,7 +16,7 @@ Template.mfAdminLogin.helpers({
   }
 });
 
-Template.mfAdminLoginAccountsUI.onCreated(function () {
+Template.mfAdminLogin.onCreated(function () {
   this.autorun(function () {
     if (Admin.isAdmin(Meteor.userId())) {
       Admin.go('/');

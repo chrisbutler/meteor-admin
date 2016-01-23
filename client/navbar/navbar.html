@@ -27,7 +27,7 @@
 </template>
 
 <template name="mfAdminNavbarItem">
-  <li>
+  <li class="{{isActivePath href}}">
     {{#if template}}
       {{> Template.dynamic template=template data=this}}
     {{else}}
