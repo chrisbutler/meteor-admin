@@ -25,7 +25,9 @@ Package.onUse(function(api) {
   api.use([
     'iron:router@1.0.12',
     'zimme:active-route@2.3.2',
-    'fortawesome:fontawesome@4.5.0'
+    'fortawesome:fontawesome@4.5.0',
+    'kadira:flow-router@2.10.0',
+    'kadira:blaze-layout@2.3.0'
   ]);
 
   api.use([
